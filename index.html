@@ -1,66 +1,158 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Health · srini.presents</title><meta name="description" content="Illustrated articles about common health conditions and orthopaedics."><link rel="canonical" href="https://health.srinipresents.com/"><style>
-:root{--ink:#09283f;--paper:#fffdf4;--cream:#fff9e7;--red:#962039}*{box-sizing:border-box}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.5 "Trebuchet MS",Arial,sans-serif}a{color:inherit}a:focus-visible{outline:3px solid #087c75;outline-offset:4px}.site-nav{border-bottom:1px solid #dcd6c3}.nav-inner,main,footer{max-width:1200px;margin:auto;padding:16px 26px}.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:12px}.brand img{display:block;width:112px;height:auto}.nav-inner>a:last-child{font-weight:bold}header{padding:24px clamp(16px,4vw,40px);background:#cbdfff;border:2px solid var(--ink);border-radius:16px;box-shadow:4px 4px 0 var(--ink)}h1{margin:0;color:var(--red);font:bold italic clamp(32px,6vw,56px)/1.04 Georgia,serif}header p{margin:12px 0 0;max-width:60ch}.tiles{list-style:none;padding:0;margin:28px 0 10px;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}.tiles a{display:flex;height:100%;flex-direction:column;border:2px solid var(--ink);border-radius:12px;background:var(--paper);overflow:hidden;box-shadow:3px 3px 0 var(--ink);text-decoration:none}.tiles a:hover h2{text-decoration:underline}.tile-art{background:#d7eeff;display:grid;place-items:center;border-bottom:2px solid var(--ink);height:104px}.tile-art svg{width:88px;height:88px}.tiles li:nth-child(5n+2) .tile-art{background:#c8edda}.tiles li:nth-child(5n+3) .tile-art{background:#ffe49d}.tiles li:nth-child(5n+4) .tile-art{background:#f9d7c4}.tiles li:nth-child(5n+5) .tile-art{background:#e4dbfb}.tile-copy{padding:9px 12px 14px}.article-number{font-size:12px;font-weight:bold}.tiles h2{margin:3px 0 0;font:bold 19px/1.18 Georgia,serif}footer{font-size:13px}@media(max-width:850px){.tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}@media(max-width:620px){.tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.nav-inner,main,footer{padding-inline:14px}.tiles h2{font-size:17px}}@media(max-width:340px){.tiles{grid-template-columns:1fr}}
-.health-hero{display:grid;grid-template-columns:minmax(0,4fr) minmax(0,6fr);align-items:stretch;overflow:hidden;padding:0;background:#fff4cd}
-.health-hero-copy{align-self:center;padding:clamp(22px,5vw,56px)}
-.health-hero img{display:block;width:100%;height:auto;aspect-ratio:3/2;object-fit:cover}
-@media(max-width:650px){.health-hero{grid-template-columns:1fr}.health-hero img{aspect-ratio:3/2}}
-.health-sections{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,260px),1fr));gap:18px;margin:24px 0 8px}
-.health-sections a{display:flex;flex-direction:column;gap:6px;padding:20px;background:var(--paper);border:2px solid var(--ink);border-radius:12px;box-shadow:3px 3px 0 var(--ink);text-decoration:none}
-.health-sections a:hover{background:#e6f4ee}.health-sections strong{font:bold 26px Georgia,serif}
-</style>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Health, Simply Told · Srini Presents</title>
+<meta name="description" content="Illustrated guides to common health conditions, bones and joints, written around the questions patients ask.">
+<link rel="canonical" href="https://health.srinipresents.com/">
+<link rel="stylesheet" href="/assets/health-home.css">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Health">
-<meta property="og:description" content="Illustrated articles about common health conditions and orthopaedics.">
-<meta property="og:url" content="https://health.srinipresents.com/">
 <meta property="og:site_name" content="srini.presents">
+<meta property="og:title" content="Health, Simply Told · Srini Presents">
+<meta property="og:description" content="Illustrated answers to everyday health and orthopaedic questions.">
+<meta property="og:url" content="https://health.srinipresents.com/">
 <meta property="og:image" content="https://health.srinipresents.com/health/health-banner.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="800">
-<meta property="og:image:alt" content="Open health handbook showing a heart and knee joint with a stethoscope.">
+<meta property="og:image:alt" content="An open illustrated health handbook with a heart, knee joint and stethoscope.">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Health">
-<meta name="twitter:description" content="Illustrated articles about common health conditions and orthopaedics.">
-<meta name="twitter:image" content="https://health.srinipresents.com/health/health-banner.jpg">
-<meta name="twitter:image:alt" content="Open health handbook showing a heart and knee joint with a stethoscope.">
-</head><body>
-<!-- sitenav:auto --><style>
-.sp-bar{position:sticky;top:0;z-index:9999;display:flex;gap:8px;align-items:center;
-padding:8px 12px;background:rgba(255,253,244,.94);border-bottom:2px solid #09283f;
-backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
-font:700 14px/1 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-.sp-bar a{display:inline-flex;align-items:center;gap:6px;padding:8px 14px;border-radius:999px;
-border:2px solid #09283f;background:#fff;color:#09283f;text-decoration:none;box-shadow:2px 2px 0 #09283f}
-.sp-bar a:hover,.sp-bar a:focus-visible{background:#ffe53a}
-.sp-bar a:active{transform:translate(1px,1px);box-shadow:1px 1px 0 #09283f}
-.sp-bar .sp-brand{margin-left:auto;border:0;box-shadow:none;background:none;padding:0 2px}
-.sp-bar .sp-brand img{display:block;height:36px;width:auto}
-.sp-bar .sp-brand:hover{background:none}
-@media(max-width:420px){.sp-bar{gap:5px;padding:6px 8px}.sp-bar a{padding:7px 8px}.sp-bar .sp-brand img{height:29px}}
-@media print{.sp-bar{display:none}}
-</style>
-<nav class="sp-bar" aria-label="Site">
-<a href="https://srinipresents.com/" id="sp-back" aria-label="Go back">&larr; Back</a>
-<a href="https://srinipresents.com/" aria-label="Home page">&#8962; Home</a>
-<a href="https://srinipresents.com/search/" aria-label="Search articles">Search</a>
-<a class="sp-brand" href="https://srinipresents.com/"><img src="/assets/brand/logo.png" alt="srini.presents" width="420" height="192"></a>
+</head>
+<body>
+<a class="skip" href="#content">Skip to content</a>
+<header class="masthead"><div class="wrap">
+<a class="brand" href="https://srinipresents.com/"><img src="/assets/brand/logo-clear.png" width="560" height="257" alt="Srini Presents home"></a>
+<nav aria-label="Health navigation">
+<a href="/health/general/">General Health</a>
+<a href="/health/ortho/">Orthopaedics</a>
+<a href="#article-index">Article Index</a>
 </nav>
-<script>
-(function(){var b=document.getElementById('sp-back');if(!b)return;
-b.addEventListener('click',function(e){var r=document.referrer;
-if(r&&new URL(r).origin===location.origin&&r.split('#')[0]!==location.href.split('#')[0]&&history.length>1&&!e.metaKey&&!e.ctrlKey&&!e.shiftKey&&!e.altKey){e.preventDefault();history.back();}});})();
-</script>
-<!-- /sitenav:auto -->
-<nav class="site-nav" aria-label="Main navigation"><div class="nav-inner"><a href="https://srinipresents.com/" class="brand"><img src="/assets/brand/logo-clear.png" width="560" height="257" alt="srini.presents home"></a><a href="https://srinipresents.com/">← Home</a></div></nav>
-<main>
-  <header class="health-hero">
-    <div class="health-hero-copy"><h1>Health</h1></div>
-    <img src="/health/health-banner.jpg" alt="" width="1200" height="800" fetchpriority="high">
-  </header>
-  <nav class="health-sections" aria-label="Health sections">
-    <a href="/health/general/"><strong>General</strong><span>25 articles on common health conditions</span></a>
-    <a href="/health/ortho/"><strong>Orthopaedics</strong><span>40 articles on knee replacement, fractures, neck pain and shoulders</span></a>
-  </nav>
+</div></header>
+<main class="wrap" id="content">
+<header class="hero">
+<div class="hero-copy">
+<h1>Health,<br><em>Simply Told</em></h1>
+<p>Why does my blood pressure go up? What happens after a knee replacement? Explore illustrated answers to the questions patients ask.</p>
+<nav class="hero-links" aria-label="Browse Health"><a href="#collections">Explore collections</a><a href="#article-index">Find an article</a></nav>
+</div>
+<img src="/health/health-banner.jpg" alt="An open health handbook showing a heart and knee joint beside a stethoscope" width="1200" height="800" fetchpriority="high">
+</header>
+<section id="collections" aria-labelledby="collections-title">
+<h2 id="collections-title">Explore the collections</h2>
+<div class="collections">
+<a class="card" href="/health/general/">
+<img src="/health/01-why-can-my-blood-pressure-be-high/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><small>25 illustrated articles</small><h3>General Health</h3><p>Everyday symptoms, common conditions and the questions that come up after a test or check-up.</p><b>Browse General Health &rarr;</b></div>
+</a>
+<a class="card" href="/health/ortho/">
+<img src="/health/ortho/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><small>40 illustrated articles</small><h3>Orthopaedics</h3><p>Bones, joints and the spine, from everyday movement to surgery and recovery.</p><b>Browse Orthopaedics &rarr;</b></div>
+</a>
+</div>
+</section>
+<section aria-labelledby="topics-title">
+<h2 id="topics-title">Orthopaedic series</h2>
+<div class="topics">
+<a class="card" href="/health/ortho/knee-replacement/">
+<img src="/health/ortho/knee-replacement/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><h3>Knee Replacement</h3><p>Surgery, recovery and everyday mobility</p></div>
+</a>
+<a class="card" href="/health/ortho/fracture/">
+<img src="/health/ortho/fracture/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><h3>Fracture Care</h3><p>Broken bones, treatment and healing</p></div>
+</a>
+<a class="card" href="/health/ortho/neck-pain/">
+<img src="/health/ortho/neck-pain/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><h3>Neck Pain</h3><p>Stiffness, headaches and nerve symptoms</p></div>
+</a>
+<a class="card" href="/health/ortho/shoulder/">
+<img src="/health/ortho/shoulder/og-share.jpg" alt="" width="1200" height="630" loading="lazy">
+<div class="card-copy"><h3>Shoulder Health</h3><p>Frozen shoulder, injuries and movement</p></div>
+</a>
+</div>
+</section>
+<section class="index" id="article-index" aria-labelledby="index-title">
+<h2 id="index-title">Article index</h2>
+<details><summary>General Health <small>25 articles</small></summary>
+<ul>
+<li><a href="/health/01-why-can-my-blood-pressure-be-high/">Why Can My Blood Pressure Be High When I Feel Perfectly Fine?</a></li>
+<li><a href="/health/02-why-is-my-sugar-high-without-sweets/">Why Is My Sugar High Without Sweets?</a></li>
+<li><a href="/health/03-why-does-my-chest-burn-after-dinner/">Why Does My Chest Burn After Dinner or When I Lie Down?</a></li>
+<li><a href="/health/04-why-am-i-always-tired-cold-and-gaining-weight/">Why Am I Always Tired, Cold and Gaining Weight?</a></li>
+<li><a href="/health/05-why-does-my-headache-make-light-noise-and-smells-unbearable/">Why Does My Headache Make Light, Noise and Even Smells Unbearable?</a></li>
+<li><a href="/health/06-why-do-i-start-wheezing-at-night/">Why Do I Start Wheezing at Night or When the Weather Changes?</a></li>
+<li><a href="/health/07-why-does-my-scan-show-fatty-liver/">Why Does My Scan Show Fatty Liver When I Don’t Drink Alcohol?</a></li>
+<li><a href="/health/08-why-do-i-feel-exhausted-after-climbing-stairs/">Why Do I Feel Exhausted After Climbing Just One Flight of Stairs?</a></li>
+<li><a href="/health/09-how-can-a-tiny-stone-cause-such-terrible-pain/">How Can a Tiny Stone Cause Such Terrible Pain?</a></li>
+<li><a href="/health/10-why-do-i-snore-loudly-and-still-wake-up-exhausted/">Why Do I Snore Loudly and Still Wake Up Exhausted?</a></li>
+<li><a href="/health/11-why-does-my-stomach-hurt-after-a-heavy-or-oily-meal/">Why Does My Stomach Hurt After a Heavy or Oily Meal?</a></li>
+<li><a href="/health/12-why-are-the-veins-in-my-legs-thick-and-twisted/">Why Are the Veins in My Legs Becoming Thick and Twisted?</a></li>
+<li><a href="/health/13-why-do-i-wake-up-three-times-to-pass-urine/">Why Do I Wake Up Three Times Every Night to Pass Urine?</a></li>
+<li><a href="/health/14-why-does-the-room-spin-when-i-turn-over-in-bed/">Why Does the Room Spin When I Turn Over in Bed?</a></li>
+<li><a href="/health/15-why-do-i-see-fresh-blood-after-passing-stools/">Why Do I See Fresh Blood After Passing Stools?</a></li>
+<li><a href="/health/16-why-does-everything-look-cloudy-even-with-my-glasses/">Why Does Everything Look Cloudy Even with My Glasses?</a></li>
+<li><a href="/health/17-why-does-my-skin-keep-itching-with-no-rash/">Why Does My Skin Keep Itching Even When There Is No Rash?</a></li>
+<li><a href="/health/18-why-does-my-stomach-keep-bloating/">Why Does My Stomach Keep Bloating Even When All My Tests Are Normal?</a></li>
+<li><a href="/health/19-how-can-a-small-fall-cause-a-major-fracture/">How Can a Small Fall Cause a Major Fracture?</a></li>
+<li><a href="/health/20-how-can-a-heart-artery-become-blocked-without-warning/">How Can a Heart Artery Become Blocked Without Any Warning?</a></li>
+<li><a href="/health/21-why-does-it-burn-every-time-i-pass-urine/">Why Does It Burn Every Time I Pass Urine?</a></li>
+<li><a href="/health/22-why-do-i-keep-getting-mouth-ulcers/">Why Do I Keep Getting Mouth Ulcers?</a></li>
+<li><a href="/health/23-why-do-i-sneeze-ten-times-every-morning/">Why Do I Sneeze Ten Times Every Morning?</a></li>
+<li><a href="/health/24-why-wont-my-cough-go-away/">Why Won’t My Cough Go Away?</a></li>
+<li><a href="/health/25-why-are-my-periods-irregular-and-my-weight-increasing/">Why Are My Periods Irregular and My Weight Increasing?</a></li>
+</ul></details>
+<details><summary>Knee Replacement <small>10 articles</small></summary>
+<ul>
+<li><a href="/health/ortho/knee-replacement/when-is-it-time/">How Do I Know When It’s Time for a Knee Replacement?</a></li>
+<li><a href="/health/ortho/knee-replacement/both-knees/">If Both My Knees Hurt, Should I Replace Them Together or One at a Time?</a></li>
+<li><a href="/health/ortho/knee-replacement/what-gets-replaced/">What Exactly Gets Replaced in a Total Knee Replacement?</a></li>
+<li><a href="/health/ortho/knee-replacement/robotic-vs-conventional/">Robotic vs. Conventional Knee Replacement: What Difference Does It Make for Me?</a></li>
+<li><a href="/health/ortho/knee-replacement/first-assisted-walk/">Why Am I Asked to Stand and Walk So Soon After Surgery?</a></li>
+<li><a href="/health/ortho/knee-replacement/warmth-and-swelling/">Why Is My Knee Still Warm and Swollen Weeks After Surgery?</a></li>
+<li><a href="/health/ortho/knee-replacement/bending-and-straightening/">Why Is It So Hard to Bend or Fully Straighten My New Knee?</a></li>
+<li><a href="/health/ortho/knee-replacement/kneeling-and-floor-activities/">Will I Be Able to Kneel, Sit Cross-Legged, or Use a Floor Toilet Again?</a></li>
+<li><a href="/health/ortho/knee-replacement/pain-months-later/">Why Does My Knee Still Hurt Months After Replacement?</a></li>
+<li><a href="/health/ortho/knee-replacement/implant-life-and-revision/">How Long Will My New Knee Last, and What Happens If It Wears Out?</a></li>
+</ul></details>
+<details><summary>Fracture Care <small>10 articles</small></summary>
+<ul>
+<li><a href="/health/ortho/fracture/01-bathroom-hip-fracture/">I Only Slipped in the Bathroom. How Did My Hip Break?</a></li>
+<li><a href="/health/ortho/fracture/02-why-not-just-plaster/">My Bone Is Broken. Why Can’t the Doctor Just Put a Plaster?</a></li>
+<li><a href="/health/ortho/fracture/03-normal-xray-hidden-fracture/">My X-Ray Looks Fine. Could I Still Have a Fracture?</a></li>
+<li><a href="/health/ortho/fracture/04-why-bone-takes-months-to-heal/">The Doctor Fixed My Fracture. Why Does My Bone Still Take Months to Heal?</a></li>
+<li><a href="/health/ortho/fracture/05-healed-bone-stiff-joint/">My Fracture Has Healed. Why Can&#x27;t I Move My Joint Normally?</a></li>
+<li><a href="/health/ortho/fracture/06-child-bone-healing/">Why Does a Child’s Broken Bone Heal Differently From an Adult’s?</a></li>
+<li><a href="/health/ortho/fracture/07-why-fracture-has-not-joined/">The Fracture Was Fixed Six Months Ago. Why Hasn’t It Joined?</a></li>
+<li><a href="/health/ortho/fracture/08-why-wrist-breaks-after-fall/">Why Did My Wrist Break When I Put My Hand Out to Stop a Fall?</a></li>
+<li><a href="/health/ortho/fracture/09-can-walk-after-fall-hip-fracture/">I Can Walk After My Fall. Does That Mean My Hip Isn’t Broken?</a></li>
+<li><a href="/health/ortho/fracture/10-one-broken-bone-after-fifty/">One Broken Bone After Fifty. Could Another Fracture Be Waiting?</a></li>
+</ul></details>
+<details><summary>Neck Pain <small>10 articles</small></summary>
+<ul>
+<li><a href="/health/ortho/neck-pain/waking-up-with-a-stiff-neck/">Why Did I Wake Up Unable to Turn My Head?</a></li>
+<li><a href="/health/ortho/neck-pain/neck-pain-after-a-workday/">Why Does My Neck Hurt by the End of a Workday?</a></li>
+<li><a href="/health/ortho/neck-pain/neck-pain-and-tingling-fingers/">How Can a Problem in My Neck Make My Fingers Tingle?</a></li>
+<li><a href="/health/ortho/neck-pain/neck-clicking/">Why Does My Neck Click When I Turn to Check Traffic?</a></li>
+<li><a href="/health/ortho/neck-pain/cervical-spondylosis/">My X-ray Says “Cervical Spondylosis.” What Does That Mean?</a></li>
+<li><a href="/health/ortho/neck-pain/neck-related-headache/">Could My Headache Be Starting in My Neck?</a></li>
+<li><a href="/health/ortho/neck-pain/pillows-and-neck-pain/">Can Switching Pillows Help My Neck Pain?</a></li>
+<li><a href="/health/ortho/neck-pain/neck-pain-after-a-car-crash/">Why Did My Neck Hurt the Day After a Minor Car Crash?</a></li>
+<li><a href="/health/ortho/neck-pain/clumsy-hands-and-neck-pain/">What Do Clumsy Hands Have to Do With Neck Pain?</a></li>
+<li><a href="/health/ortho/neck-pain/fever-and-neck-pain/">Why Did My Doctor Ask About Fever When I Came In for Neck Pain?</a></li>
+</ul></details>
+<details><summary>Shoulder Health <small>10 articles</small></summary>
+<ul>
+<li><a href="/health/ortho/shoulder/overhead-shoulder-pain/">Why Does My Shoulder Hurt When I Reach Overhead?</a></li>
+<li><a href="/health/ortho/shoulder/frozen-shoulder/">Why Can’t I Reach Behind My Back Anymore?</a></li>
+<li><a href="/health/ortho/shoulder/night-shoulder-pain/">Why Does My Shoulder Wake Me Up at Night?</a></li>
+<li><a href="/health/ortho/shoulder/shoulder-after-fall/">Why Can’t I Lift My Arm After a Fall?</a></li>
+<li><a href="/health/ortho/shoulder/shoulder-instability/">Why Does My Shoulder Keep Slipping Out?</a></li>
+<li><a href="/health/ortho/shoulder/ac-joint-injury/">Why Is There a Bump on Top of My Shoulder After a Fall?</a></li>
+<li><a href="/health/ortho/shoulder/calcific-tendinopathy/">How Can a Tiny Calcium Deposit Cause So Much Shoulder Pain?</a></li>
+<li><a href="/health/ortho/shoulder/shoulder-clicking/">Why Does My Shoulder Click When I Move It?</a></li>
+<li><a href="/health/ortho/shoulder/neck-referred-shoulder-pain/">Can a Problem in My Neck Feel Like Shoulder Pain?</a></li>
+<li><a href="/health/ortho/shoulder/shoulder-arthritis/">Why Does My Shoulder Grind and Feel Stiff?</a></li>
+</ul></details>
+</section>
 </main>
-<footer>srini.presents</footer></body></html>
+<footer class="wrap foot"><a href="https://srinipresents.com/">srini.presents</a> &middot; Patient education</footer>
+</body>
+</html>
