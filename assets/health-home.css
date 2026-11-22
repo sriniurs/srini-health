@@ -21,3 +21,15 @@ section{margin-top:clamp(38px,7vw,82px);scroll-margin-top:16px}section h2{font-s
   .topics .card-copy{padding:13px 15px;gap:4px}
   .topics .card-copy p{font-size:.9rem}
 }
+
+.collection-art {
+  aspect-ratio: 2.4;
+  background: #ead4a3 url("/health/health-banner.jpg") no-repeat;
+  background-size: 170% auto;
+}
+.collection-art--general { background-position: 10% 49%; }
+.collection-art--ortho { background-position: 96% 49%; }
+.topics .card img { height: auto; }
+@media (max-width: 600px) {
+  .topics .card img { height: 100%; }
+}
