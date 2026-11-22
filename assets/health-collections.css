@@ -19,3 +19,44 @@
   .tiles h2 { line-height: 1.26; }
 }
 
+
+header.collection-banner {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  align-items: stretch;
+  overflow: hidden;
+  padding: 0;
+  border: 1px solid #274d42;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px #25463722;
+}
+header.collection-banner--general { background: #244e42; color: #fffdf4; }
+header.collection-banner--ortho { background: #fff0ce; color: #18352f; }
+.collection-banner .collection-banner-copy {
+  align-self: center;
+  padding: clamp(20px, 4vw, 46px);
+}
+.collection-banner .collection-banner-copy h1 {
+  margin: 0;
+  font: normal clamp(2rem, 4.5vw, 4rem)/1.05 Georgia, serif;
+  letter-spacing: -.04em;
+  color: inherit;
+}
+.collection-banner .collection-banner-copy p { margin: 12px 0 0; }
+.collection-banner > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  aspect-ratio: 2;
+  object-fit: cover;
+  object-position: center;
+}
+@media (max-width: 650px) {
+  header.collection-banner { grid-template-columns: minmax(0, 1fr); }
+  .collection-banner > img { min-height: 0; aspect-ratio: 1.9; }
+}
+
+.collection-banner--ortho .collection-banner-copy h1 {
+  font-size: clamp(1.9rem, 3.6vw, 2.9rem);
+}
