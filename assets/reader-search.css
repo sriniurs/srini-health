@@ -1,0 +1,7 @@
+.reader-search { max-width: 760px; margin: 32px auto; padding-inline: 18px; color: #18352f; font: 1rem/1.55 system-ui, sans-serif; }
+.reader-search h1 { font: normal clamp(2rem, 5vw, 3rem)/1.1 Georgia, serif; }
+.reader-search label { display: block; margin-bottom: 6px; font-weight: 650; }
+.reader-search input { box-sizing: border-box; width: 100%; min-height: 44px; padding: 8px 12px; border: 1px solid #486354; border-radius: 8px; font: inherit; }
+.reader-search ul { padding-left: 22px; }
+.reader-search li { margin-block: 10px; }
+.reader-search a { color: inherit; text-underline-offset: 3px; }
