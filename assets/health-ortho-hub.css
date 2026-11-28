@@ -1,0 +1,6 @@
+.collection-ortho .ortho-jumps{display:flex;flex-wrap:wrap;justify-content:flex-start;gap:8px;margin:24px 0 12px;padding:0;max-width:none}
+.collection-ortho .ortho-jumps a{display:inline-flex;align-items:center;min-height:40px;padding:6px 13px;color:#176366;background:#eaf4f3;border:1px solid #c9dedc;border-radius:999px;text-decoration:none;font-size:.88rem;font-weight:700}
+.collection-ortho .ortho-jumps a:hover{text-decoration:underline;background:#dfeeed}
+.collection-ortho .ortho-category{margin:29px 0 0;scroll-margin-top:64px}
+.collection-ortho .ortho-category h2{font:700 clamp(1.5rem,3.15vw,2.2rem)/1.14 Georgia,serif;color:#142e4d;margin:0 0 14px;padding-bottom:9px;border-bottom:1px solid #d6e1e5}
+.collection-ortho .ortho-category:last-of-type{margin-bottom:28px}
