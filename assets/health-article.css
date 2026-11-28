@@ -54,4 +54,4 @@ main.wrap .say.g .bubble { --bubble-pastel: #edf5e9; }
 main.wrap .say:not(.g) .bubble::after { border-right-color: var(--bubble-pastel); }
 main.wrap .say.g .bubble::after { border-left-color: var(--bubble-pastel); }
 
-html body main.wrap .warn::before { color: #000 !important; }
+html body main.wrap .warn::before { color: #621f1e !important; }
