@@ -1,0 +1,19 @@
+.new-series{margin:0;background:#f7f9fa;color:#142e4d;font:1rem/1.55 Arial,sans-serif}
+.new-series *{box-sizing:border-box}
+.new-series a{color:inherit}
+.new-series a:focus-visible{outline:3px solid #176366;outline-offset:4px}
+.new-series .series-wrap{width:min(100% - 36px,1060px);margin:0 auto;padding-bottom:44px}
+.new-series .series-nav{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:17px 0;font-weight:700}
+.new-series .series-nav img{display:block;width:112px;height:auto}
+.new-series .collection-banner-copy h1{font-size:clamp(1.9rem,4.6vw,3.55rem)!important;letter-spacing:-.035em}
+.new-series .collection-banner-copy p{margin-bottom:0;max-width:44ch}
+.new-series .grid{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.new-series .grid li{display:flex;min-width:0}
+.new-series .card{width:100%;text-decoration:none;border-radius:14px;overflow:hidden}
+.new-series .card-text{padding:15px 16px 19px}
+.new-series .card-text h2{margin:5px 0 8px;font:700 clamp(1.17rem,2vw,1.38rem)/1.18 Georgia,serif;color:#142e4d}
+.new-series .card:hover h2{text-decoration:underline;text-underline-offset:3px}
+.new-series .card-text small{font-size:.72rem;font-weight:700;letter-spacing:.045em;color:#176366}
+.new-series .card-text p{margin:0;color:#42566b;font-size:.93rem}
+@media(max-width:850px){.new-series .grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.new-series .grid{grid-template-columns:minmax(0,1fr)}}
