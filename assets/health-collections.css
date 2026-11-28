@@ -186,3 +186,30 @@ a.card:not(.grid a.card) .card-art { aspect-ratio: 4; }
   .collection-refresh .collection-banner > .hero-image { height: auto; }
   .collection-ortho a.card:has(.painted-thumbnail) .card-art { aspect-ratio: 2; }
 }
+
+/* The four Orthopaedics destinations are equal, image-led cards. */
+.collection-ortho.collection-refresh header.collection-banner {
+  grid-template-columns: minmax(0, 48fr) minmax(0, 52fr);
+}
+.collection-ortho .collection-banner .collection-banner-copy h1 {
+  font-size: clamp(1.55rem, 11cqw, 2.9rem);
+  overflow-wrap: normal;
+  word-break: normal;
+}
+.collection-ortho .grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+.collection-ortho .grid .pinned-series { grid-column: auto; order: 0; }
+.collection-ortho .grid a.card:has(.painted-thumbnail) { display: block; }
+.collection-ortho .grid a.card:has(.painted-thumbnail) .card-art {
+  display: block;
+  aspect-ratio: 2;
+  border-right: 0;
+  border-bottom: 1px solid #d6e1e5;
+}
+.collection-ortho .grid a.card .painted-thumbnail { object-fit: cover; }
+@media (max-width: 650px) {
+  .collection-ortho.collection-refresh header.collection-banner,
+  .collection-ortho .grid { grid-template-columns: minmax(0, 1fr); }
+}
