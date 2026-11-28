@@ -44,3 +44,12 @@ main .cover .sample{display:inline-block;background:#fff!important;color:#176366
 @media print{main.wrap header.cover,main .ep,main .evidence{box-shadow:none!important} body{background:#fff!important}}
 
 @media(max-width:640px){main.wrap .reading p:not(.small,.lead,.cap){font-size:18.5px!important}}
+
+/* Distinct pastel surfaces for section dividers and the two speakers. */
+main.wrap .era { background: #eaf2f8 !important; }
+main.wrap .era.p2 { background: #e6f2ef !important; }
+main.wrap .era.p3 { background: #f2edf7 !important; }
+main.wrap .say .bubble { --bubble-pastel: #eaf3fa; background: var(--bubble-pastel) !important; color: #142e4d !important; }
+main.wrap .say.g .bubble { --bubble-pastel: #edf5e9; }
+main.wrap .say:not(.g) .bubble::after { border-right-color: var(--bubble-pastel); }
+main.wrap .say.g .bubble::after { border-left-color: var(--bubble-pastel); }
