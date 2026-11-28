@@ -213,3 +213,24 @@ a.card:not(.grid a.card) .card-art { aspect-ratio: 4; }
   .collection-ortho.collection-refresh header.collection-banner,
   .collection-ortho .grid { grid-template-columns: minmax(0, 1fr); }
 }
+
+/* Small, image-led article links, matching the Fracture Care cards. */
+.collection-refresh :is(.tiles a,.grid a.card):has(.topic-art) {
+  display: flex;
+  flex-direction: column;
+}
+.collection-refresh :is(.tiles a .tile-art,a.card .card-art).topic-art {
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 2.15;
+  overflow: hidden;
+  background: #eaf4f4;
+  border: 0;
+  border-bottom: 1px solid #d6e1e5;
+}
+.collection-refresh :is(.tiles a,.grid a.card) .topic-art .painted-thumbnail {
+  object-fit: cover;
+  object-position: center 47%;
+}
