@@ -122,3 +122,67 @@ a.card:not(.grid a.card) .card-art { aspect-ratio: 4; }
   .collection-banner > .hero-image { height: auto; }
   a.card:not(.grid a.card) .card-art { aspect-ratio: 2.5; }
 }
+
+/* Collection artwork is separate from the homepage and article illustrations. */
+.collection-refresh header.collection-banner {
+  grid-template-columns: minmax(0, 4fr) minmax(0, 6fr);
+  background: #edf4f5;
+  color: #142e4d;
+}
+.collection-refresh .collection-banner .collection-banner-copy h1 {
+  font-size: clamp(1.9rem, 4vw, 3.25rem);
+  line-height: 1.06;
+}
+.collection-refresh .collection-banner > .hero-image {
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1.8;
+  padding: 0;
+  object-fit: cover;
+  object-position: center;
+}
+.collection-refresh :is(.tiles a, .grid a.card):has(.editorial-icon) {
+  display: grid;
+  grid-template-columns: minmax(62px, 24%) minmax(0, 1fr);
+}
+.collection-refresh :is(.tiles a .tile-art, a.card .card-art).editorial-icon {
+  height: 100%;
+  min-height: 84px;
+  aspect-ratio: auto;
+  display: grid;
+  place-items: center;
+  border: 0;
+  border-right: 1px solid #d6e5e6;
+  background: radial-gradient(ellipse at 30% 24%, #ffffffc9, transparent 80%), linear-gradient(140deg, #dbeaed, #e7edf5);
+}
+.collection-refresh li:nth-child(3n+2) :is(.tile-art, .card-art).editorial-icon {
+  background: radial-gradient(ellipse at 35% 18%, #ffffffb5, transparent 80%), linear-gradient(145deg, #e1ece3, #edf2ed);
+}
+.collection-refresh li:nth-child(3n+3) :is(.tile-art, .card-art).editorial-icon {
+  background: radial-gradient(ellipse at 30% 24%, #ffffffb5, transparent 80%), linear-gradient(145deg, #f1e6de, #f4eeeb);
+}
+.collection-refresh .editorial-icon svg {
+  display: block;
+  width: min(65%, 66px);
+  height: auto;
+  filter: saturate(.6);
+}
+.collection-ortho a.card:has(.painted-thumbnail) .card-art {
+  aspect-ratio: 2.8;
+}
+.collection-fracture .grid a.card:has(.painted-thumbnail) {
+  display: block;
+}
+.collection-fracture .grid a.card .card-art {
+  display: block;
+  aspect-ratio: 2;
+  border-right: 0;
+  border-bottom: 1px solid #d6e5e6;
+}
+.collection-fracture .grid a.card .painted-thumbnail { object-fit: cover; }
+@media (max-width: 650px) {
+  .collection-refresh header.collection-banner { grid-template-columns: minmax(0, 1fr); }
+  .collection-refresh .collection-banner > .hero-image { height: auto; }
+  .collection-ortho a.card:has(.painted-thumbnail) .card-art { aspect-ratio: 2; }
+}
