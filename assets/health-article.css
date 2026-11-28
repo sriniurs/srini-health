@@ -23,7 +23,7 @@ main .ep-head{align-items:center;gap:12px;padding-bottom:12px;border-bottom:1px 
 main .ep-head .no{background:#176366;color:#fff;transform:none;border:0;border-radius:8px;padding:5px 9px;font:700 .88rem/1.4 Arial,sans-serif}
 main.wrap .ep-head h2,main .evidence h2,main .patient-note h2{color:#142e4d!important;font:700 clamp(1.48rem,3.65vw,2.35rem)/1.14 Georgia,serif!important;letter-spacing:-.02em;text-transform:none}
 main .reading,main .panel{color:#142e4d!important}
-main .reading{max-width:74ch;font:400 1rem/1.68 Arial,sans-serif;margin-inline:auto;width:100%}
+main .reading{max-width:74ch;font:400 calc(1rem + 1px)/1.68 Arial,sans-serif;margin-inline:auto;width:100%}
 main .reading p+p{margin-top:1em}
 main .ill{border:1px solid #b6c9d2!important;background:#f5fafb!important;box-shadow:none!important;border-radius:14px;transform:none!important}
 main .panel{border:1px solid #d6e1e5!important;border-radius:12px;background:#fff!important}
@@ -42,3 +42,5 @@ main .cover .cover-copy>.byline:has(.preview-brand-logo){margin:0 0 10px!importa
 main .cover .cover-copy>.byline .tagline{display:block;color:#465b70!important}
 main .cover .sample{display:inline-block;background:#fff!important;color:#176366!important;border:1px solid #b9d2d4!important;border-radius:999px;font:700 .68rem/1.35 Arial,sans-serif!important;padding:5px 10px}
 @media print{main.wrap header.cover,main .ep,main .evidence{box-shadow:none!important} body{background:#fff!important}}
+
+@media(max-width:640px){main.wrap .reading p:not(.small,.lead,.cap){font-size:18.5px!important}}
